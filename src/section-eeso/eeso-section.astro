@@ -1,0 +1,254 @@
+---
+
+---
+
+<section class="section eeso-section">
+
+    <div class="hero-modality">
+
+        <img
+            src="/assets/images/historia-escuela-2.jpg"
+            alt="Estudiantes de la orientación EESO"
+        >
+
+        <div class="overlay"></div>
+
+        <div class="hero-title" data-aos="fade-up">
+
+            <h1>
+                EESO
+            </h1>
+
+            <h2>
+                EDUCACIÓN SECUNDARIA ORIENTADA
+                EN COMUNICACIÓN
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="max-content">
+
+        <div class="info-container" data-aos="fade-up">
+
+            <div class="text-container">
+
+                <p>
+                    Esta modalidad forma a estudiantes capacitados para
+                    desarrollar conocimientos y habilidades relacionados
+                    con el área de la comunicación.
+                </p>
+
+                <p>
+                    Los estudiantes pueden adquirir herramientas para
+                    expresarse, comunicar ideas y desenvolverse en
+                    diferentes ámbitos vinculados con la comunicación.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+    .eeso-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+
+    /* PORTADA */
+
+    .hero-modality{
+        width: 100%;
+        height: 500px;
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+
+    .hero-modality img{
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center;
+
+        z-index: 1;
+    }
+
+
+    .overlay{
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.55);
+
+        z-index: 2;
+    }
+
+
+    .hero-title{
+        position: relative;
+
+        z-index: 3;
+
+        width: 90%;
+        max-width: 1100px;
+
+        text-align: center;
+
+        color: #fff;
+    }
+
+
+    .hero-title h1{
+        font-size: 5rem;
+
+        margin: 0;
+
+        font-weight: 700;
+
+        text-shadow:
+            5px 6px 8px rgba(0, 0, 0, 0.75);
+    }
+
+
+    .hero-title h2{
+        font-size: 2.2rem;
+
+        margin-top: 10px;
+
+        color: #fff;
+
+        text-shadow:
+            4px 5px 6px rgba(0, 0, 0, 0.75);
+    }
+
+
+    /* CONTENIDO */
+
+    .max-content{
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+
+        padding-top: 70px;
+        padding-bottom: 150px;
+
+        position: relative;
+
+        z-index: 5;
+    }
+
+
+    .info-container{
+        width: 90%;
+        max-width: 1000px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .text-container{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        align-items: center;
+    }
+
+
+    p{
+        width: 90%;
+        max-width: 900px;
+
+        text-align: center;
+
+        font-size: 1.1rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* RESPONSIVE */
+
+    @media screen and (max-width: 768px){
+
+        .hero-modality{
+            height: 400px;
+        }
+
+        .hero-title{
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-title h1,
+        .hero-title h2{
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-title h1{
+            font-size: 3.5rem;
+        }
+
+        .hero-title h2{
+            font-size: 1.6rem;
+            margin-top: 10px;
+        }
+
+        .max-content{
+            padding-top: 50px;
+            padding-bottom: 100px;
+        }
+
+
+        .info-container{
+            width: 90%;
+        }
+
+
+        p{
+            width: 100%;
+            font-size: 1rem;
+        }
+
+    }
+
+</style>

@@ -1,0 +1,254 @@
+<section class="section modalities-section">
+    <div class="max-content">
+        <div class="title-container" data-aos="fade-up">
+            <h2>Modalidades</h2>
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="tipp-container" data-aos="fade-right">
+
+            <div class="tipp-btn">
+                <a href="tipp">Ver Más</a>
+            </div>
+
+            <div class="info-text">
+                <h2>TIPP</h2>
+                <h3>TÉCNICO EN INFORMÁTICA PERSONAL Y PROFESIONAL</h3>
+                <p>
+                    Formamos técnicos capaces de instalar, mantener y resolver problemas de equipos y servicios informáticos. Aprenderás a ayudar a usuarios, trabajar en redes, sistemas y software, y ser el nexo entre el especialista y el usuario final.
+                </p>
+            </div>
+        </div>
+
+        <div class="teie-container" data-aos="fade-left">
+
+            <div class="teie-btn">
+                <a href="teie">Ver Más</a>
+            </div>
+
+            <div class="info-text">
+                <h2>TEIE</h2>
+                <h3>TÉCNICO EN EQUIPOS E INSTALACIONES ELECTROMECÁNICAS</h3>
+                <p>
+                    Formamos técnicos preparados para instalar y mantener equipos e instalaciones electromecánicas, incluyendo líneas eléctricas de baja y media tensión.
+                </p>
+            </div>
+        </div>
+
+        <div class="eeso-container" data-aos="fade-right">
+
+            <div class="eeso-btn">
+                <a href="eeso">Ver Más</a>
+            </div>
+
+            <div class="info-text">
+                <h2>EESO</h2>
+                <h3>EDUCACIÓN SECUNDARIA ORIENTADA</h3>
+                <p>
+                    Formamos estudiantes que desarrollan habilidades en comunicación, producción audiovisual, medios digitales, redes sociales, creatividad y pensamiento crítico.
+                </p>
+            </div>
+
+        </div>
+        
+    </div>
+
+
+</section>
+
+<style>
+    .modalities-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        overflow: hidden;
+    }
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .tipp-container, .teie-container, .eeso-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        max-width: 2000px;        
+        height: 450px;
+        border-radius: 30px;
+    }
+
+    .tipp-container{
+        background-image: url('/assets/images/2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }   
+
+    .eeso-container{
+        background-image: url('/assets/images/historia-escuela-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .teie-container{
+        background-image: url('/assets/images/teie4.jpg');
+        flex-direction: row-reverse;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }   
+
+    .info-text{
+        width: 100%;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 20px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0d3c7fc7;
+        color: #fff;
+        justify-content: center;
+        text-align: center;
+        margin: 35px;
+        box-shadow:0 20px 30px rgba(0, 0, 0, 0.73);
+    }
+    
+    .info-text h2{
+        text-shadow: 5px 6px 5px  rgba(0, 0, 0, 0.75);
+        margin-bottom: 10px;
+    }
+
+    .info-text h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .info-text p{
+        text-align: center;
+    }
+
+    .tipp-btn, .teie-btn, .eeso-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tipp-btn a, .teie-btn a, .eeso-btn a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        padding: 10px 25px 10px 25px;
+        background: #0d3d7f;
+        color: #fff;
+        border-radius: 30px;
+        transition: .3s;
+        position: relative;
+        z-index: 10;
+        font-weight: 600;
+    }
+
+    .tipp-btn a::after, .teie-btn a::after, .eeso-btn a::after{
+        content: '';
+        width: 0%; 
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s ease-in-out;
+        border-radius: 17px;
+
+        z-index: -1;
+    }
+
+    .tipp-btn a:hover::after, .teie-btn a:hover::after, .eeso-btn a:hover::after{
+        width: 100%;
+    }
+
+    .tipp-btn a:hover, .teie-btn a:hover, .eeso-btn a:hover{
+        color: var(--primary-color);
+    }
+
+
+    @media screen and (max-width: 1100px) {
+        .info-container{
+            width: 90%;
+            padding: 0 15px;
+        }
+
+        .tipp-container, .teie-container, .eeso-container{
+            width: 95%;
+            max-width: 500px;
+            flex-direction: column-reverse;            
+            height: auto;
+            min-height: 650px;
+
+            flex-direction: column-reverse;
+            justify-content: space-between;
+
+            padding: 20px;
+        }
+
+        .info-text{
+            width: 100%;
+            max-width: none;
+            height: auto;
+            margin-top: 20px;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .info-text h3{
+            font-size: 1.5rem;
+        }
+
+        .info-text p{
+            font-size: .95rem;
+            line-height: 1.6;
+        }
+
+        .tipp-btn, .teie-btn, .eeso-btn{
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            padding: 25px 0;
+        }
+
+        .tipp-btn a, .teie-btn a{
+            width: fit-content;
+        }
+
+         .modalities-section{
+        background: var(--third-color);
+            }
+
+            .tipp-container,
+            .teie-container,
+            .eeso-container{
+                background-color: var(--third-color);
+            }
+
+    }
+
+</style>

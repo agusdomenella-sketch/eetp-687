@@ -1,0 +1,276 @@
+---
+
+---
+
+<section class="section requierements-section">
+    <div class="max-content">
+        <div class="title-container">
+            <h2>REQUISITOS</h2>
+        </div>
+
+        <div class="requierements-container">
+
+            <div class="p p-1">
+                <p data-aos="fade-right">
+                    Matrícula, acuerdos, autorizaciones 2026 y constancia de exámenes.
+                </p>
+            </div>
+            
+            <div class="p p-2">
+                <p data-aos="fade-left">
+                    Certificado de alumno regular (Solicitarlo en la escuela primaria).
+                </p>
+            </div>
+            
+            <div class="p p-3">
+                <p  data-aos="fade-right">
+                    Cuaderno de comunicaciones preferentemente tapa dura.
+                </p>
+            </div>
+
+            <div class="p p-4">
+                <p data-aos="fade-left">
+                    Certificado médico y bucodental 2026 (Presentar en marzo).
+                </p>
+            </div>
+            
+            <div class="p p-5">
+                <p data-aos="fade-right">
+                    Alumnos con informes médicos o psicopedagógicos, presentar informes actualizados.
+                </p>
+            </div>
+
+            <div class="p p-6">
+                <p data-aos="fade-left">
+                    Folio tamaño oficio.
+                </p>
+            </div>
+
+            <div class="img">
+                <img data-aos="fade-up" src="/assets/images/imagen-escuela-fuera.webp" alt="Estudiantes en clase">
+            </div>
+            
+        </div>
+        
+    </div>
+
+</section>
+
+<style>
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .requierements-section{
+        margin-top: 100px;
+    }
+
+    .title-container{
+        margin-bottom: 40px;
+    }
+
+    .requierements-container{
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr) 200px minmax(0, 1fr);
+
+        grid-template-areas:
+            "p-1 img p-2"
+            "p-3 img p-4"
+            "p-5 img p-6";
+
+        gap: 12px;
+
+        width: min(1000px, 90%);
+        margin: auto;
+    }
+
+    .p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p-1{
+        grid-area: p-1;
+    }
+
+    .p-2{
+        grid-area: p-2;
+    }
+
+    .p-3{
+        grid-area: p-3;
+    }
+
+    .p-4{
+        grid-area: p-4;
+    }
+
+    .p-5{
+        grid-area: p-5;
+    }
+
+    .p-6{
+        grid-area: p-6;
+    }
+
+    .p p{
+        position: relative;
+        overflow: hidden;
+
+        width: 100%;
+        min-height: 110px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 25px 30px;
+
+        color: #fff;
+
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+
+        border-radius: 20px;
+
+        text-align: center;
+        font-size: 17px;
+        line-height: 1.5;
+
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+
+    .p p::before{
+        content: '';
+
+        position: absolute;
+
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.08);
+
+        top: -35px;
+        right: -35px;
+    }
+
+    .p p::after{
+        position: absolute;
+
+        bottom: 10px;
+        right: 15px;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 2rem;
+
+        color: rgba(255, 255, 255, 0.18);
+    }
+
+    .p-1 p::after{
+        content: '01';
+    }
+
+    .p-2 p::after{
+        content: '02';
+    }
+
+    .p-3 p::after{
+        content: '03';
+    }
+
+    .p-4 p::after{
+        content: '04';
+    }
+
+    .p-5 p::after{
+        content: '05';
+    }
+
+    .p-6 p::after{
+        content: '06';
+    }
+
+    .p p:hover{
+        transform: translateY(-4px);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+    }
+
+    .img{
+        grid-area: img;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img img{
+        width: 200px;
+        height: 250px;
+
+        border-radius: 20px;
+
+        object-fit: cover;
+
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+
+        transition: transform 0.3s ease;
+    }
+
+    .img img:hover{
+        transform: scale(1.015);
+    }
+
+
+    @media screen and (max-width: 768px){
+
+        .requierements-container{
+            grid-template-columns: 1fr;
+
+            grid-template-areas:
+                "img"
+                "p-1"
+                "p-2"
+                "p-3"
+                "p-4"
+                "p-5"
+                "p-6";
+
+            width: 90%;
+
+            gap: 15px;
+        }
+
+        .img{
+            margin-bottom: 10px;
+        }
+
+        .img img{
+            width: 100%;
+            height: 230px;
+        }
+
+        .p p{
+            width: 100%;
+            min-height: 130px;
+
+            padding: 25px 20px;
+
+            font-size: 16px;
+        }
+    }
+</style>

@@ -1,0 +1,180 @@
+---
+
+---
+
+<header>
+    <div class="max-content">
+        <div class="img-container">
+            <a href="/"><img src="assets/images/logoEscuela.png" alt="Logo de la escuela"></a>
+        </div>
+
+        <span class="header-btn header-btn-open" id="openMenu">
+            <img src="assets/icons/bars.svg" alt="Abrir menu">
+        </span>
+        <span class="header-btn header-btn-close" id="closeMenu">
+            <img src="assets/icons/xMark.svg" alt="Cerrar menu">
+        </span>
+
+        <nav class="header-nav" id="header-nav">
+            <ul class="header-nav-ul">
+                <a href="/">Inicio</a>
+                <a href="tipp">TIPP</a>
+                <a href="teie">TEIE</a>
+                <a href="eeso">EESO</a>
+                <a href="inscription">Inscripciones</a>
+                <a href="/galeria">Galería</a>
+                <a href="news">Noticias</a>
+                <a href="cooperative">Cooperativa</a>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    header{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+
+        background: #231766;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 10000;
+        box-shadow: 0px 0px 10px #071f3f8e;   
+    }
+
+    .max-content{
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .header-btn{
+        display: none;
+    }
+
+    .header-nav-ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .header-nav-ul a{
+        color: #fff;
+        position: relative;
+        padding: 10px 20px;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .header-nav-ul a::after{
+        content: '';
+        width: 0%; 
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s ease-in-out;
+        border-radius: 17px;
+        z-index: -10;
+    }
+
+    .header-nav-ul a:hover::after{
+        width: 100%;
+    }
+
+    .header-nav-ul a:hover{
+        color: #004bad;
+        font-weight: 600;
+    }
+
+    .header-nav-ul a{
+        text-decoration: none;  
+    }
+
+    .img-container img{
+        width: 60px;
+        filter: invert(1);
+    }
+
+    @media screen and (max-width: 768px){
+        header{
+            padding: 0 20px;
+            position: fixed;        
+        }
+
+        nav{
+            width: 0%;
+            overflow: hidden;
+        }
+
+        .header-btn{
+            display: block;
+            z-index: 10000;
+        }
+
+        .header-btn img{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+    
+        }
+
+        .header-nav{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0%;
+            height: 100vh;
+            background: #231766;
+            transition: all .2s ease-in-out;
+            z-index: 9999;
+        }
+        
+        .header-nav-ul{
+            flex-direction: column;
+            align-items: end;
+            padding-right: 20px;
+            margin-top: 100px;
+        }
+        
+        .header-btn-close{
+            display: none;
+        }
+
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const CloseMenu = document.getElementById('closeMenu');
+        const OpenMenu = document.getElementById('openMenu');
+        const HeaderNav = document.getElementById('header-nav');
+
+        if (CloseMenu && OpenMenu && HeaderNav) {
+            CloseMenu.addEventListener('click', () => {
+                HeaderNav.style.width = '0%';
+                CloseMenu.style.display = 'none';
+                OpenMenu.style.display = 'block';
+            });
+            OpenMenu.addEventListener('click', () => {
+                HeaderNav.style.width = '60%';
+                CloseMenu.style.display = 'block';
+                OpenMenu.style.display = 'none';
+            });
+        }
+    });
+</script>

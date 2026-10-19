@@ -1,0 +1,276 @@
+---
+
+---
+
+<section class="section arduino-section">
+    <div class="max-content">
+
+        <div class="title-container" data-aos="fade-up">
+            <h2>PROYECTOS CON ARDUINO</h2>
+        </div>
+
+        <div class="years-container">
+
+            <!-- 2025 -->
+            <div class="year-section year-2025">
+
+                <div class="year-title" data-aos="fade-up">
+                    <span>2025</span>
+                    <h3>Proyectos con Arduino realizados por 5to año</h3>
+                </div>
+
+                <div class="projects-grid">
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduinox.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
+                        >
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino2.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
+                        >
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino5.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
+                        >
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino4.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2024 -->
+            <div class="year-section year-2024">
+
+                <div class="year-title" data-aos="fade-up">
+                    <span>2024</span>
+                    <h3>Proyectos con Arduino realizados por 5to año</h3>
+                </div>
+
+                <div class="projects-grid">
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino-us.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
+                        >
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino-us2.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
+                        >
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up">
+                        <img
+                            src="/assets/images/arduino-us3.webp"
+                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .arduino-section{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .title-container{
+        margin-bottom: 50px;
+    }
+
+
+    .years-container{
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 30px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 60px;
+        align-items: start;
+    }
+
+
+    .year-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+
+
+    .year-title{
+        width: 100%;
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+
+    .year-title span{
+        display: block;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 3.5rem;
+
+        color: var(--primary-color);
+
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+
+    .year-title h3{
+        font-size: 1.35rem;
+        color: var(--secondary-color);
+
+        line-height: 1.3;
+    }
+
+
+    .projects-grid{
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 20px;
+    }
+
+
+    .project-card{
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        overflow: hidden;
+
+        border-radius: 20px;
+
+        box-shadow:
+            0 8px 22px rgba(0, 0, 0, 0.20);
+
+        background: #fff;
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    .project-card img{
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: cover;
+
+        transition: transform 0.3s ease;
+    }
+
+
+    .project-card:hover{
+        transform: translateY(-5px);
+
+        box-shadow:
+            0 14px 28px rgba(0, 0, 0, 0.28);
+    }
+
+
+    .project-card:hover img{
+        transform: scale(1.04);
+    }
+
+
+    /* El tercer proyecto de 2024 queda centrado */
+    .year-2024 .project-card:last-child{
+        grid-column: 1 / 3;
+        width: 50%;
+        justify-self: center;
+    }
+
+
+    @media screen and (max-width: 900px){
+
+        .years-container{
+            grid-template-columns: 1fr;
+
+            width: 90%;
+
+            gap: 70px;
+        }
+
+
+        .year-title h3{
+            font-size: 1.3rem;
+        }
+
+    }
+
+
+    @media screen and (max-width: 600px){
+
+        .projects-grid{
+            grid-template-columns: 1fr;
+
+            gap: 20px;
+        }
+
+
+        .year-2024 .project-card:last-child{
+            grid-column: auto;
+
+            width: 100%;
+        }
+
+
+        .year-title span{
+            font-size: 3rem;
+        }
+
+
+        .year-title h3{
+            font-size: 1.2rem;
+        }
+
+    }
+
+</style>

@@ -1,0 +1,383 @@
+---
+
+---
+
+<section class="section coop-section">
+
+    <div class="max-content">
+
+        <!-- INTRODUCCIÓN -->
+
+        <div class="coop-intro" data-aos="fade-up">
+
+            <span class="coop-label">
+                COOPERATIVA ESCOLAR
+            </span>
+
+            <h2>
+                Construimos juntos
+            </h2>
+
+            <p>
+                La Cooperativa Escolar es un espacio de participación
+                y aprendizaje donde los estudiantes pueden trabajar
+                en equipo, tomar decisiones y desarrollar valores
+                que fortalecen los vínculos con la comunidad educativa.
+            </p>
+
+        </div>
+
+
+        <!-- TARJETAS -->
+
+        <div class="coop-cards">
+
+
+            <!-- TARJETA 1 -->
+
+            <article
+                class="coop-card card-red"
+                data-aos="fade-right"
+            >
+
+                <div class="card-number">
+                    01
+                </div>
+
+                <div class="card-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    ¿Qué es una cooperativa escolar?
+                </h3>
+
+                <p>
+                    Es una organización formada y gestionada por
+                    estudiantes, con el apoyo de docentes y la
+                    comunidad educativa.
+                </p>
+
+                <p>
+                    Su objetivo es aprender a trabajar en equipo,
+                    tomar decisiones democráticamente y desarrollar
+                    valores como la solidaridad, la responsabilidad
+                    y el compromiso.
+                </p>
+
+            </article>
+
+
+            <!-- TARJETA 2 -->
+
+            <article
+                class="coop-card card-orange"
+                data-aos="fade-up"
+            >
+
+                <div class="card-number">
+                    02
+                </div>
+
+                <div class="card-icon">
+                    👥
+                </div>
+
+                <h3>
+                    Gestión estudiantil
+                </h3>
+
+                <p>
+                    Los alumnos son quienes toman las decisiones,
+                    proponen ideas y organizan las actividades
+                    cotidianas de la entidad.
+                </p>
+
+                <p>
+                    Los maestros y directivos participan como guías
+                    u orientadores, acompañando el proceso sin
+                    reemplazar la autonomía de los estudiantes.
+                </p>
+
+            </article>
+
+
+            <!-- TARJETA 3 -->
+
+            <article
+                class="coop-card card-yellow"
+                data-aos="fade-left"
+            >
+
+                <div class="card-number">
+                    03
+                </div>
+
+                <div class="card-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Valores y comunidad
+                </h3>
+
+                <p>
+                    La cooperativa fomenta la solidaridad, la ayuda
+                    mutua, la responsabilidad y la democracia.
+                </p>
+
+                <p>
+                    También desarrolla proyectos, servicios y
+                    actividades que ayudan a la escuela y a su entorno.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+    .coop-section{
+        margin-top: 100px;
+        padding: 20px 20px 100px;
+    }
+
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .coop-intro{
+        width: 100%;
+        max-width: 850px;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+
+        margin-bottom: 60px;
+    }
+
+
+    .coop-label{
+        font-family: 'Montserrat', sans-serif;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        letter-spacing: 3px;
+
+        color: var(--primary-color);
+    }
+
+
+    .coop-intro h2{
+        color: var(--secondary-color);
+
+        font-size: 3.5rem;
+    }
+
+
+    .coop-intro p{
+        max-width: 750px;
+
+        color: var(--color-text);
+
+        line-height: 1.7;
+
+        font-size: 17px;
+    }
+
+
+    /* =========================
+       TARJETAS
+    ========================= */
+
+    .coop-cards{
+        width: 100%;
+        max-width: 1100px;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 25px;
+    }
+
+
+    .coop-card{
+        position: relative;
+
+        min-height: 430px;
+
+        padding: 45px 35px;
+
+        border-radius: 25px;
+
+        color: #fff;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 15px 30px rgba(0, 0, 0, 0.16);
+
+        transition:
+            transform .3s ease,
+            box-shadow .3s ease;
+    }
+
+
+    .coop-card:hover{
+        transform: translateY(-8px);
+
+        box-shadow:
+            0 22px 40px rgba(0, 0, 0, 0.22);
+    }
+
+
+    .card-red{
+        background: #c3413e;
+    }
+
+
+    .card-orange{
+        background: #e8900e;
+    }
+
+
+    .card-yellow{
+        background: #d49d25;
+    }
+
+
+    .card-number{
+        font-family: 'Montserrat', sans-serif;
+
+        font-size: 14px;
+        font-weight: 700;
+
+        opacity: .75;
+
+        letter-spacing: 2px;
+    }
+
+
+    .card-icon{
+        font-size: 42px;
+
+        margin-bottom: 5px;
+    }
+
+
+    .coop-card h3{
+        font-size: 1.7rem;
+
+        line-height: 1.2;
+    }
+
+
+    .coop-card p{
+        font-family: 'Montserrat', sans-serif;
+
+        line-height: 1.6;
+
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       DECORACIÓN
+    ========================= */
+
+    .coop-card::after{
+        content: '';
+
+        position: absolute;
+
+        width: 150px;
+        height: 150px;
+
+        border-radius: 50%;
+
+        background: rgba(255,255,255,.08);
+
+        right: -60px;
+        bottom: -60px;
+    }
+
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media screen and (max-width: 900px){
+
+        .coop-cards{
+            grid-template-columns: 1fr;
+            max-width: 600px;
+        }
+
+        .coop-card{
+            min-height: auto;
+        }
+
+    }
+
+
+    @media screen and (max-width: 768px){
+
+        .coop-section{
+            margin-top: 70px;
+            padding: 20px 15px 80px;
+        }
+
+
+        .coop-intro{
+            margin-bottom: 40px;
+        }
+
+
+        .coop-intro h2{
+            font-size: 2.5rem;
+        }
+
+
+        .coop-intro p{
+            font-size: 15px;
+        }
+
+
+        .coop-cards{
+            width: 90%;
+        }
+
+
+        .coop-card{
+            padding: 35px 28px;
+        }
+
+    }
+
+</style>

@@ -1,0 +1,620 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/header.astro"
+import Footer from "../components/footer.astro"
+import WhatsappBtn from "../components/whatsappBtn.astro"
+import BackBtn from "../components/back-btn.astro"
+---
+
+<Layout title="75 años de historia - EETP N°687">
+
+    <Header />
+
+    <main class="history-page">
+
+        <section class="history-hero">
+            <div class="history-title">
+                <h1>75 AÑOS DE HISTORIA</h1>
+                <p>
+                    Un recorrido por la historia de nuestra escuela,
+                    sus generaciones y todo lo construido a lo largo de estos años.
+                </p>
+            </div>
+        </section>
+
+
+<section class="history-content">
+
+    <div class="history-container">
+
+        <!-- BLOQUE 1 -->
+
+        <div class="history-story">
+            <div class="story-text">
+                <span class="story-number">01</span>
+
+                <h2>Los comienzos</h2>
+
+                <p>
+                    Nuestra escuela comenzó su recorrido hace 75 años,
+                    convirtiéndose desde entonces en un espacio de aprendizaje,
+                    encuentro y crecimiento para generaciones de estudiantes.
+                </p>
+
+                <p>
+                    Desde sus primeros años, la institución tuvo como objetivo
+                    brindar herramientas y conocimientos que permitieran a sus
+                    estudiantes construir un futuro y aportar al crecimiento
+                    de la comunidad.
+                </p>
+            </div>
+
+            <div class="story-image">
+                <img
+                    src="/assets/images/historia-escuela-3.jpg"
+                    alt="Primeros años de la escuela"
+                >
+            </div>
+        </div>
+
+
+        <!-- FOTO GRANDE -->
+
+        <div class="history-full-image">
+            <img
+                src="/assets/images/historia-escuela-4.jpg"
+                alt="Historia de la escuela"
+            >
+        </div>
+
+
+        <!-- BLOQUE 2 -->
+
+        <div class="history-story reverse">
+
+            <div class="story-image">
+                <img
+                    src="/assets/images/historia-escuela-5.jpg"
+                    alt="Historia de la escuela"
+                >
+            </div>
+
+            <div class="story-text">
+                <span class="story-number">02</span>
+
+                <h2>Una escuela que crece</h2>
+
+                <p>
+                    Con el paso de los años, la escuela fue creciendo junto
+                    con su comunidad. Nuevos estudiantes, docentes y familias
+                    fueron formando parte de una historia que continúa
+                    construyéndose hasta el día de hoy.
+                </p>
+
+                <p>
+                    Cada generación dejó su huella y contribuyó a construir
+                    la identidad de nuestra institución.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- GALERÍA DE 3 -->
+
+        <div class="history-gallery">
+
+            <img
+                src="/assets/images/historia-escuela-6.jpg"
+                alt="Historia de la escuela"
+            >
+
+            <img
+                src="/assets/images/historia-escuela-7.jpg"
+                alt="Historia de la escuela"
+            >
+
+            <img
+                src="/assets/images/historia-escuela-8.jpg"
+                alt="Historia de la escuela"
+            >
+
+        </div>
+
+
+        <!-- BLOQUE 3 -->
+
+        <div class="history-story">
+
+            <div class="story-text">
+                <span class="story-number">03</span>
+
+                <h2>Educación y comunidad</h2>
+
+                <p>
+                    La escuela fue creciendo y adaptándose a los cambios,
+                    manteniendo siempre el compromiso con la educación y
+                    con las necesidades de la comunidad.
+                </p>
+
+                <p>
+                    A través de los años, sus espacios fueron escenario de
+                    innumerables experiencias, aprendizajes, proyectos y
+                    momentos compartidos.
+                </p>
+
+                <a href="/promociones" class="history-btn">
+                    Conocé nuestras promociones
+                </a>
+            </div>
+
+            <div class="story-image">
+                <img
+                    src="/assets/images/historia-escuela-9.jpg"
+                    alt="La comunidad educativa"
+                >
+            </div>
+
+        </div>
+
+
+        <!-- FOTO GRANDE -->
+
+        <div class="history-full-image">
+
+            <img
+                src="/assets/images/historia-escuela-10.jpg"
+                alt="Historia de la escuela"
+            >
+
+        </div>
+
+
+        <!-- BLOQUE 4 -->
+
+        <div class="history-story reverse">
+
+            <div class="story-image">
+                <img
+                    src="/assets/images/historia-escuela-11.jpg"
+                    alt="Historia de la escuela"
+                >
+            </div>
+
+            <div class="story-text">
+                <span class="story-number">04</span>
+
+                <h2>75 años construyendo futuro</h2>
+
+                <p>
+                    Llegar a los 75 años significa celebrar todo lo vivido,
+                    reconocer a quienes fueron parte de este camino y valorar
+                    cada etapa que permitió que nuestra escuela llegara hasta
+                    donde está hoy.
+                </p>
+
+                <p>
+                    Pero también significa mirar hacia adelante y continuar
+                    construyendo nuevos caminos para las generaciones que
+                    vendrán.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- ÚLTIMA GALERÍA -->
+
+        <div class="history-gallery final-gallery">
+
+            <img
+                src="/assets/images/historia-escuela-12.jpg"
+                alt="75 años de la escuela"
+            >
+
+            <img
+                src="/assets/images/historia-escuela-13.jpg"
+                alt="75 años de la escuela"
+            >
+
+        </div>
+
+         <a href="/" class="history-home-btn">
+            ← Volver a inicio
+        </a>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <BackBtn />
+    <WhatsappBtn />
+    <Footer />
+
+</Layout>
+
+
+<style>
+
+    .history-page{
+        width: 100%;
+    }
+
+
+    /* =========================
+       ENCABEZADO
+    ========================= */
+
+    .history-hero{
+        min-height: 450px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 100px 20px 70px;
+
+        background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url('/assets/images/historia-escuela-1.jpg');
+
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .history-title{
+        width: 100%;
+        max-width: 900px;
+
+        text-align: center;
+
+        color: #fff;
+    }
+
+
+    .history-title h1{
+        font-size: 5rem;
+        margin-bottom: 20px;
+    }
+
+
+    .history-title p{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       CONTENIDO
+    ========================= */
+
+    .history-content{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 90px 20px;
+    }
+
+
+    .history-container{
+        width: 100%;
+        max-width: 1100px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 80px;
+    }
+
+
+    /* =========================
+    BLOQUES DE HISTORIA
+    ========================= */
+
+    .history-story{
+        display: flex;
+        align-items: center;
+
+        gap: 70px;
+    }
+
+
+    .history-story.reverse{
+        flex-direction: row-reverse;
+    }
+
+
+    .story-text{
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+
+    .story-number{
+        font-family: 'Montserrat', sans-serif;
+
+        font-size: 18px;
+        font-weight: 700;
+
+        color: var(--primary-color);
+    }
+
+
+    .story-text h2{
+        font-size: 3rem;
+
+        color: var(--secondary-color);
+    }
+
+
+    .story-text p{
+        color: var(--color-text);
+
+        line-height: 1.7;
+
+        text-align: justify;
+    }
+
+.story-text .history-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin-top: 20px;
+    padding: 12px 30px;
+
+    background: var(--primary-color);
+    color: #fff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    transition: all .3s ease;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.story-text .history-btn:hover{
+    background: var(--secondary-color);
+    color: #fff;
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.history-home-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    margin: 20px auto 0;
+    padding: 12px 30px;
+
+    background: var(--secondary-color);
+    color: #fff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+    text-decoration: none;
+    border-radius: 30px;
+
+    transition: all .3s ease;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
+}
+
+.history-home-btn:hover{
+    background: var(--primary-color);
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   IMÁGENES
+========================= */
+
+.story-image{
+    width: 50%;
+}
+
+
+.story-image img{
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.story-image img:hover{
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   FOTO GRANDE
+========================= */
+
+.history-full-image{
+    width: 100%;
+}
+
+
+.history-full-image img{
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+
+    transition: transform .3s ease;
+}
+
+
+.history-full-image img:hover{
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.history-gallery{
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.history-gallery img{
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.history-gallery img:hover{
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.22);
+}
+
+
+.final-gallery{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.final-gallery img{
+    height: 330px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .history-content{
+        padding: 60px 0;
+    }
+
+
+    .history-container{
+        width: 90%;
+
+        gap: 60px;
+    }
+
+
+    .history-story,
+    .history-story.reverse{
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .story-text,
+    .story-image{
+        width: 100%;
+    }
+
+
+    .story-text h2{
+        font-size: 2.3rem;
+    }
+
+
+    .story-text p{
+        text-align: center;
+    }
+
+
+    .story-image img{
+        height: 230px;
+    }
+
+
+    .history-full-image img{
+        height: 230px;
+    }
+
+
+    .history-gallery{
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .history-gallery img{
+        height: 230px;
+    }
+
+
+    .final-gallery{
+        grid-template-columns: 1fr;
+    }
+
+
+    .final-gallery img{
+        height: 230px;
+    }
+
+}

@@ -1,0 +1,181 @@
+	---
+	const { title } = Astro.props;
+	import 'aos/dist/aos.css'
+	---
+
+	<!doctype html>
+	<html lang="es">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width" />
+			<link rel="icon" type="image/svg+xml" href="assets/images/logoEscuela.png" />
+			<title>{title}</title>
+		</head>
+		<body id="body">
+			<slot />
+			<script>
+				import AOS from 'aos';
+				AOS.init();
+			</script>
+		</body>
+	</html>
+
+	<style is:global>
+		html{
+			scroll-behavior: smooth;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		:root{
+			--primary-color: #004aad;
+			--secondary-color: #0d3d7f;
+			--third-color: #f7f2ec;
+			--fourth-color: #e1ad39;
+			--color-text: #414c5a;
+		}
+
+		@font-face {
+			font-family: 'Montserrat';
+			src: url('/assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'BebasNeue';
+			src: url('/assets/fonts/BebasNeue-Regular.woff2') format('woff2');
+			font-weight: 600;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Poppins';
+			src: url('/assets/fonts/Poppins-Regular.ttf') format('truetype');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Poppins';
+			src: url('/assets/fonts/Poppins-Medium.ttf') format('truetype');
+			font-weight: 500;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Poppins';
+			src: url('/assets/fonts/Poppins-SemiBold.ttf') format('truetype');
+			font-weight: 600;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Poppins';
+			src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype');
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'BonaNovaSC';
+			src: url('/assets/fonts/BonaNovaSC-Regular.ttf') format('truetype');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+
+		@font-face {
+			font-family: 'BonaNovaSC';
+			src: url('/assets/fonts/BonaNovaSC-Bold.ttf') format('truetype');
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Alata';
+			src: url('/assets/fonts/Alata-Regular.ttf') format('truetype');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'PlayfairDisplaySC';
+			src: url('/assets/fonts/PlayfairDisplaySC-Italic.ttf') format('truetype');
+			font-weight: 400;
+			font-style: normal;
+		}
+
+
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: 'Alata', sans-serif;
+		}
+
+		p{
+			font-family: 'Montserrat', sans-serif;
+		}
+		
+		html,
+		body{
+			background: var(--third-color);
+		}
+
+		body{
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}	
+		.title-container{
+			padding: 10px 70px;
+			background: var(--secondary-color);
+			border-radius: 30px;
+			display: flex;
+			width: 600px;
+			justify-content: center;
+			margin: 20px 0;
+			color: #fff;
+			text-align: center;
+		}
+
+		h1{
+			font-size: 4rem;
+			display: flex;
+		}
+
+		h2{
+			font-size: 2.5rem;
+			display: flex;
+		}
+
+		h3{
+			font-size: 2rem;
+		}
+
+		.max-content{
+			display: flex;
+			width: 100%;
+			max-width: 1280px;
+		}
+
+		.section{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			overflow: hidden;
+		}
+
+		@media screen and (max-width: 768px) {
+			.title-container{
+				width: 90%;
+				padding: 20px 10px;
+			}
+		}
+	</style>

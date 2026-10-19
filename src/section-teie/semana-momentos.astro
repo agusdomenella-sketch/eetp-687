@@ -1,0 +1,129 @@
+---
+
+---
+
+<section class="section proyects-section">
+    <div class="max-content">
+
+        <div class="proyects-container">
+            <div class="title">
+                <p>2024</p>
+                <h3>MUESTRA SEMANA MOMENTOS</h3>
+            </div>
+
+            <div class="proyects-content">
+                <div class="proyects-item proyect-1" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+                
+                <div class="proyects-item proyect-2" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+                
+                <div class="proyects-item proyect-3" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+
+                <div class="proyects-item proyect-4" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+
+                <div class="proyects-item proyect-5" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+
+                <div class="proyects-item proyect-6" data-aos="fade-up">
+                    <img src="/assets/images/" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .proyects-section{
+        margin-top: 100px;
+    }
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: var(--secondary-color);
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    .proyects-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .proyects-item a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        padding: 10px 40px;
+        background: #0d3d7f;
+        color: #fff;
+        border-radius: 30px;
+        transition: .3s;
+        position: relative;
+        z-index: 10;
+        font-weight: 600;
+        border: 2px solid #fff;
+    }
+
+    .proyects-item a::after{
+        content: '';
+        width: 0%; 
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s ease-in-out;
+        border-radius: 17px;
+        z-index: -1;
+    }
+
+    .proyects-item a:hover::after{
+        width: 100%;
+    }
+
+    .proyects-item a:hover{
+        color: var(--primary-color);
+    }
+
+    .title{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .proyects-item{
+        height: 250px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 20px;
+        background: #000;
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .proyects-content{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>

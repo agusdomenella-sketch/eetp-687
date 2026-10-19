@@ -1,0 +1,221 @@
+---
+
+---
+
+<section class="section magazines-section" id="magazines">
+    <div class="max-content">
+
+        <div class="title-container" data-aos="fade-up">
+            <h2>REVISTAS - TÉCNICAS NOTICIAS</h2>
+        </div>
+
+        <div class="magazines-container">
+
+            <div class="card-container">
+
+                <a href="pdf/news/tecnica-noticias-2001.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2001</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2003.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2003</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2004.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2004</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2005.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2005</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2006.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2006</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2008.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2008</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2010.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2010</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pdf/news/tecnica-noticias-2011.pdf" target="_blank" rel="noopener" data-aos="fade-up">
+                    <div class="card">
+                        <img src="/assets/icons/pdf.svg" alt="Icono de PDF">
+                        <div>
+                            <h3>PDF - REVISTA</h3>
+                            <p>2011</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .magazines-section{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .max-content{
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .title-container{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+    .magazines-container{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+
+        padding: 10px 40px;
+
+        color: #fff;
+
+        border-radius: 20px;
+
+        min-width: 220px;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.24);
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+
+
+    a{
+        text-decoration: none;
+    }
+
+
+    .card img{
+        width: 80px;
+
+        transition: transform 0.25s ease;
+    }
+
+
+    .card h3{
+        margin: 0;
+        font-size: 1.2rem;
+    }
+
+
+    .card p{
+        margin: 5px 0 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+
+    .card:hover{
+        transform: translateY(-6px);
+
+        box-shadow:
+            0 12px 25px rgba(0, 0, 0, 0.35);
+    }
+
+
+    .card:hover img{
+        transform: scale(1.05);
+    }
+
+
+    @media screen and (max-width: 768px){
+
+        .card-container{
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+
+        .card{
+            width: 100%;
+            min-width: 0;
+            box-sizing: border-box;
+        }
+
+    }
+
+</style>

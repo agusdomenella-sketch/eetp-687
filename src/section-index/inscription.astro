@@ -1,0 +1,115 @@
+---
+
+---
+
+<section class="section inscription-section">
+    <div class="max-content">
+        <div class="info-container">
+            <div class="text-container" data-aos="fade-up">
+                <h2>FORMA PARTE DE LA EETP-EESO N°687</h2>
+                <p>
+                    Donde no sólo formamos técnicos, sino a personas capaces de hacer realidad sus sueños.
+                </p>
+
+                <a href="inscription"> INSCRÍBETE</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .inscription-section{
+        margin-top: 100px;
+        background-image: url('/assets/images/card-inscription.JPG');
+        background-size: cover;
+        background-position: 50% 80%;
+        padding: 50px 0;
+        box-shadow:
+            0 -10px 25px rgba(0,0,0,.25),
+            0 10px 25px rgba(0,0,0,.25);    
+    }
+
+    .max-content{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .text-container{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        background: #0d3c7fc5;
+        width: 600px;
+        height: 300px;
+        border-radius: 30px;
+        box-shadow:0 15px 15px rgba(0, 0, 0, 0.65);
+        padding: 20px;
+
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        padding: 10px 20px;
+        background: #0d3d7f;
+        color: #fff;
+        border-radius: 30px;
+        transition: .3s;
+        position: relative;
+        z-index: 10;
+        font-weight: 600;
+        border: 1px solid #fff;
+    }
+
+    a::after{
+        content: '';
+        width: 0%; 
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .2s ease-in-out;
+        border-radius: 17px;
+
+        z-index: -1;
+    }
+
+    a:hover::after{
+        width: 100%;
+    }
+
+    a:hover{
+        color: var(--primary-color);
+    }
+
+    @media screen and (max-width: 768px) {
+        .text-container{
+            width: 90%;
+            height: fit-content;
+            padding: 20px;
+        }
+    }
+</style>

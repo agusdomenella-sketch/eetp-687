@@ -1,0 +1,271 @@
+---
+
+---
+
+<section class="section proyects-section">
+    <div class="max-content">
+
+        <div class="title-container" data-aos="fade-up">
+            <h2>PROYECTOS Y ACTIVIDADES</h2>
+        </div>
+
+        <div class="proyects-container">
+
+            <div class="title">
+                <p>2025</p>
+                <h3>Páginas realizadas por 5to y 6to TIPP</h3>
+            </div>
+
+            <div class="proyects-content">
+
+                <div class="proyects-item proyect-1" data-aos="fade-up">
+                    <a href="https://fountainnofyouth.neocities.org" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+                <div class="proyects-item proyect-4" data-aos="fade-up">
+                    <a href="https://promo25tecc.github.io/Promo25-Brindis/" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+                <div class="proyects-item proyect-5" data-aos="fade-up">
+                    <a href="https://proyectodealumo.netlify.app" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+                <div class="proyects-item proyect-6" data-aos="fade-up">
+                    <a href="https://paginadeunalumno2.netlify.app" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+                <div class="proyects-item proyect-7" data-aos="fade-up">
+                    <a href="https://gorgeous-madeleine-19adf1.netlify.app" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+                <div class="proyects-item proyect-8" data-aos="fade-up">
+                    <a href="https://enchanting-crumble-bffa41.netlify.app" target="_blank" rel="noopener">
+                        Ver Página
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+
+    .proyects-section{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-container{
+        margin-bottom: 30px;
+    }
+
+    /* Título de la sección */
+    .title{
+        color: var(--color-text);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .title p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+
+    .title h3{
+        font-size: 1.8rem;
+        color: var(--color-text);
+    }
+
+
+    /* Contenedor de las cards */
+    .proyects-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+
+
+    /* Grilla */
+    .proyects-content{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+    }
+
+
+    /* Cards */
+    .proyects-item{
+        height: 250px;
+        width: 250px;
+
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+        padding-bottom: 20px;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        background-size: cover;
+        background-position: center;
+
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+
+    /* Efecto hover */
+    .proyects-item:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+    }
+
+
+    /* Botón */
+    .proyects-item a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+
+        padding: 10px 30px;
+
+        background: #0d3d7f;
+        color: #fff;
+
+        border-radius: 30px;
+
+        transition: .3s;
+
+        position: relative;
+        z-index: 10;
+
+        font-weight: 600;
+
+        border: 2px solid #fff;
+    }
+
+    .proyects-item a::after{
+        content: '';
+
+        width: 0%;
+        height: 100%;
+
+        background: #fff;
+
+        position: absolute;
+
+        bottom: 0;
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        transition: all .2s ease-in-out;
+
+        border-radius: 17px;
+
+        z-index: -1;
+    }
+
+    .proyects-item a:hover::after{
+        width: 100%;
+    }
+
+    .proyects-item a:hover{
+        color: var(--primary-color);
+    }
+
+
+    /* Imágenes */
+    .proyect-1{
+        background-image: url('/assets/images/pag-1.webp');
+    }
+
+    .proyect-4{
+        background-image: url('/assets/images/pag-4.webp');
+    }
+
+    .proyect-5{
+        background-image: url('/assets/images/pag-5.webp');
+    }
+
+    .proyect-6{
+        background-image: url('/assets/images/arduino5.webp');
+    }
+
+    .proyect-7{
+        background-image: url('/assets/images/pag-7.webp');
+    }
+
+    .proyect-8{
+        background-image: url('/assets/images/pag-8.webp');
+    }
+
+
+    /* Responsive */
+    @media screen and (max-width: 900px){
+
+        .proyects-content{
+            grid-template-columns: repeat(2, 250px);
+            gap: 30px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 600px){
+
+        .proyects-content{
+            grid-template-columns: 1fr;
+            justify-items: center;
+            width: 100%;
+        }
+
+        .proyects-item{
+            margin: 0 auto;
+        }
+        .proyects-item{
+            width: 280px;
+            height: 280px;
+        }
+
+        .title h3{
+            font-size: 1.5rem;
+        }
+
+    }
+
+</style>

@@ -1,0 +1,393 @@
+---
+
+---
+
+<section class="section bento-tipp-section">
+    <div class="max-content">
+    
+        <div class="title-container" data-aos="fade-up">
+            <h2>¿Para qué te sirve esta modalidad?</h2>
+        </div>
+
+        <div class="bento-container">
+            <div class="grid">
+                <img class="img-1" src="/assets/images/compus.webp" alt="imagen de computadoras" data-aos="fade-right">
+                
+                <p class="p-1" data-aos="fade-left">
+                    Te da una base sólida si querés continuar estudios superiores en carreras relacionadas con tecnología e informática.
+                </p>
+
+                <p class="p-2" data-aos="fade-right">
+                    Esta modalidad te prepara para trabajar en soporte técnico, mantenimiento y asistencia informática en diferentes ámbitos (empresas, instituciones públicas, comercios, emprendimientos, etc.).
+                </p>
+
+                <p class="p-3" data-aos="fade-left">
+                    Desarrollarás habilidades necesarias para desempeñarte en entornos laborales reales.
+                </p>
+
+                <div class="img-2-container">
+                    <video class="img-2" src="/assets/images/video-impresora.mp4" muted autoplay loop data-aos="fade-up" />
+                </div>
+
+                <p class="p-4" data-aos="fade-left">
+                    Durante los últimos años vas a aplicar lo aprendido en situaciones reales de trabajo. Realizarás prácticas profesionalizantes en diferentes empresas de la localidad, para poder aplicar los conocimientos adquiridos a lo largo de los años y comenzar a conocer el mundo laboral.
+                </p>
+
+                <img class="img-3" src="/assets/images/salon-6-dentro.webp" alt="escuela con pantalla principal mostrando contenido educativo" data-aos="fade-right">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .bento-tipp-section{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .max-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bento-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .title-container{
+        margin-bottom: 40px;
+    }
+
+    .grid{
+        display: grid;
+
+        grid-template-columns: minmax(0, 1fr) 200px minmax(0, 1fr);
+
+        grid-template-areas:
+            "img1 img1 p1"
+            "p2 img2 p3"
+            "img3 p4 p4";
+
+        gap: 12px;
+
+        width: min(1000px, 90%);
+        margin: auto;
+    }
+
+    .img-1{
+        grid-area: img1;
+
+        width: 100%;
+        height: 300px;
+
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+
+        transition: transform 0.3s ease;
+    }
+
+    .p-1{
+        grid-area: p1;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 30px;
+
+        color: #fff;
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+        border-radius: 20px;
+
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.50);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p-2{
+        grid-area: p2;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 30px;
+
+        color: #fff;
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+        border-radius: 20px;
+
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.50);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .img-2-container{
+        grid-area: img2;
+
+        width: 200px;
+        height: 300px;
+
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+    }
+
+    .img-2{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    .img-2:hover{
+        transform: scale(1.015);
+    }
+
+    .img-1:hover,
+    .img-3:hover{
+        transform: scale(1.015);
+    }
+
+    .img-1,
+    .img-3,
+    .img-2-container{
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.20);
+    }
+
+    .p-3{
+        grid-area: p3;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 30px;
+
+        color: #fff;
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+        border-radius: 20px;
+
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.50);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        position: relative;
+        overflow: hidden;    
+        }
+
+    .p-4{
+        grid-area: p4;
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 30px;
+
+        color: #fff;
+        background: linear-gradient(
+            135deg,
+            #0d3d7f,
+            #0859c2
+        );
+        border-radius: 20px;
+
+        text-align: center;
+        font-size: 18px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.50);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        border: 1px solid rgba(255, 255, 255, 0.08);
+
+        position: relative;
+        overflow: hidden;   
+    }
+
+    .p-1:hover,
+    .p-2:hover,
+    .p-3:hover,
+    .p-4:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.55);
+    }
+
+    .p-1::before,
+    .p-2::before,
+    .p-3::before,
+    .p-4::before{
+        content: '';
+        position: absolute;
+
+        width: 80px;
+        height: 80px;
+
+        border-radius: 50%;
+
+        background: rgba(255, 255, 255, 0.08);
+
+        top: -35px;
+        right: -35px;
+    }
+    .p-1::after{
+        content: '01';
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 2rem;
+
+        color: rgba(255, 255, 255, 0.18);
+    }
+    
+    .p-2::after{
+        content: '02';
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 2rem;
+
+        color: rgba(255, 255, 255, 0.18);
+    }
+
+    .p-3::after{
+        content: '03';
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 2rem;
+
+        color: rgba(255, 255, 255, 0.18);
+    }   
+
+    .p-4::after{
+        content: '04';
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+
+        font-family: 'BebasNeue', sans-serif;
+        font-size: 2rem;
+
+        color: rgba(255, 255, 255, 0.18);
+    }
+
+    .img-3{
+        grid-area: img3;
+
+        width: 100%;
+        height: 300px;
+
+        border-radius: 20px;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.20);
+        transition: transform 0.3s ease;
+
+    }
+
+    @media screen and (max-width: 768px){
+
+        .grid{
+            grid-template-columns: 1fr;
+
+            grid-template-areas:
+                "img1"
+                "p1"
+                "img2"
+                "p2"
+                "p3"
+                "p4"
+                "img3";
+
+            width: 90%;
+            gap: 15px;
+        }
+
+        .img-1,
+        .img-3{
+            width: 100%;
+            height: 230px;
+        }
+
+        .img-2-container{
+            width: 100%;
+            height: 230px;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .p-1,
+        .p-2,
+        .p-3,
+        .p-4{
+            width: 100%;
+            height: auto;
+            min-height: 150px;
+
+            padding: 25px 20px;
+
+            font-size: 16px;
+        }
+    }
+</style>

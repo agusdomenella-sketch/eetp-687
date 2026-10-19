@@ -1,0 +1,260 @@
+---
+
+---
+
+<section class="section study-plan-section">
+
+    <div class="max-content">
+
+        <div class="title-container" data-aos="fade-up">
+            <h2>PLAN DE ESTUDIO</h2>
+        </div>
+
+
+        <div class="magazines-container">
+
+            <div class="card-container">
+
+                <div class="card">
+
+                    <a
+                        href="pdf/teie/3ro-teie.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        data-aos="fade-right"
+                    >
+
+                        <img
+                            src="/assets/icons/pdf.svg"
+                            alt=""
+                        >
+
+                        <div>
+                            <h3>3Ro TEIE</h3>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <a
+                        href="pdf/teie/4to-teie.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        data-aos="fade-up"
+                    >
+
+                        <img
+                            src="/assets/icons/pdf.svg"
+                            alt=""
+                        >
+
+                        <div>
+                            <h3>4To TEIE</h3>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <a
+                        href="pdf/teie/5to-teie.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        data-aos="fade-up"
+                    >
+
+                        <img
+                            src="/assets/icons/pdf.svg"
+                            alt=""
+                        >
+
+                        <div>
+                            <h3>5To TEIE</h3>
+                        </div>
+
+                    </a>
+
+                </div>
+
+
+                <div class="card">
+
+                    <a
+                        href="pdf/teie/6to-teie.pdf"
+                        target="_blank"
+                        rel="noopener"
+                        data-aos="fade-left"
+                    >
+
+                        <img
+                            src="/assets/icons/pdf.svg"
+                            alt=""
+                        >
+
+                        <div>
+                            <h3>6To TEIE</h3>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+    /* =========================
+       SECCIÓN
+    ========================= */
+
+    .study-plan-section{
+
+        margin-top: 100px;
+
+    }
+
+
+    .max-content{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        margin-bottom: 40px;
+
+    }
+
+
+    .title-container{
+
+        margin-bottom: 30px;
+
+    }
+
+
+    /* =========================
+       CONTENEDOR
+    ========================= */
+
+    .magazines-container{
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+
+    .card-container{
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        gap: 40px;
+
+    }
+
+
+    /* =========================
+       TARJETAS
+    ========================= */
+
+    .card{
+
+        border-radius: 20px;
+
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
+
+        box-shadow:
+            0 5px 15px rgba(0, 0, 0, 0.24);
+
+    }
+
+
+    .card a{
+
+        text-decoration: none;
+
+        display: block;
+
+        height: 100%;
+
+        border-radius: 20px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #0d3d7f,
+                #0859c2
+            );
+
+        padding: 10px 40px;
+
+        color: #fff;
+
+    }
+
+
+    /* =========================
+       ICONO PDF
+    ========================= */
+
+    .card img{
+        width: 80px;
+        transition:
+            transform 0.25s ease;
+    }
+
+
+    /* =========================
+       EFECTOS
+    ========================= */
+
+    .card:hover{
+        transform: translateY(-6px);
+        box-shadow:
+            0 12px 25px rgba(0, 0, 0, 0.35);
+    }
+
+
+    .card:hover img{
+        transform: scale(1.05);
+    }
+
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media screen and (max-width: 768px){
+
+        .card-container{
+
+            margin-top: 50px;
+
+            grid-template-columns:
+                repeat(1, 1fr);
+
+        }
+
+    }
+
+</style>

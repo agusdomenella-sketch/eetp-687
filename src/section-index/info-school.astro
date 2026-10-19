@@ -1,0 +1,100 @@
+---
+
+---
+
+<section class="section section-info-school">
+    <div class="max-content">
+        <div class="img-container">
+            <img data-aos="fade-right" src="/assets/images/imagen-escuela-fuera.webp" alt="Escuela EETP n°687">
+        </div>
+
+        <div class="info-container" data-aos="fade-left">
+            <div class="title-container">
+                <h2>Nuestra escuela EETP-EESO N°687</h2>
+            </div>
+
+            <div class="text-container">
+                <p>
+                    Aqui en la escuela técnica,  nos orgullecemos y celebramos la importancia del saber hacer. No solo enseñamos un oficio u profesión, sino también valores: el esfuerzo, la constancia, la responsabilidad y la solidaridad. Aqui aprendemos que la técnica no es solo teoría, sino también práctica, creatividad e innovación.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<style>
+    .section-info-school{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        padding-top: 150px;
+        background: #fff;
+        background: var(--third-color);
+        margin-top: -65px;
+        padding-bottom: 150px;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 5;
+        box-shadow: 0 -35px 80px rgba(0,0,0,.35);
+    }
+    
+    .max-content{
+        justify-content: space-evenly;
+        
+    }
+
+    .img-container img{
+        width: 450px;
+        height: 350px;
+        border-radius: 20px;
+        box-shadow: -15px 8px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        gap: 20px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    h2{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .max-content{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .img-container img{
+            width: 350px;
+            height: 250px;
+        }
+
+        h2{
+            font-size: 2rem;
+        }
+
+        .info-container{
+            width: 90%;
+        }
+
+        .max-content{
+            gap: 30px;
+        }
+
+        .section{
+            padding-top: 50px;
+        }
+    }
+</style>
