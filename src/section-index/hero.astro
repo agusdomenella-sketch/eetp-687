@@ -8,8 +8,12 @@ import Header from '../components/header.astro';
 <section class="section hero-section">
 
     <div class="title-hero-container">
-        <h1 data-aos="fade-up">EETP - EESO N° 687</h1>
-        <h1 data-aos="fade-up">"República de Venezuela"</h1>
+        <h1 data-aos="fade-up">
+            <span>EETP - EESO N° 687</span>
+        </h1>
+        <h1 data-aos="fade-up">
+            <span>"República de Venezuela"</span>
+        </h1>
         <h3 data-aos="fade-up">- 75 años educando técnicos -</h3>
     </div>
 
@@ -93,6 +97,13 @@ import Header from '../components/header.astro';
             margin: 0;
             padding: 0;
             max-width: 100%;
+        }
+
+        .title-hero-container h1,
+        .title-hero-container h1 span {
+            color: #fff;
+            text-decoration: none !important;
+            -webkit-text-decoration: none !important;
         }
 
         .title-hero-container h3 {
