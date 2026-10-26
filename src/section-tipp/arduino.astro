@@ -1,276 +1,489 @@
 ---
-
 ---
 
 <section class="section arduino-section">
     <div class="max-content">
 
         <div class="title-container" data-aos="fade-up">
-            <h2>PROYECTOS CON ARDUINO</h2>
+            <h2>ALGUNOS PROYECTOS REALIZADOS POR TIPP</h2>
         </div>
 
-        <div class="years-container">
+        <p class="gallery-intro" data-aos="fade-up">
+            Conocé algunos de los proyectos desarrollados por nuestros
+            estudiantes, donde la creatividad y la tecnología se unen.
+            Tocá una imagen para descubrir más sobre cada proyecto.
+        </p>
 
-            <!-- 2025 -->
-            <div class="year-section year-2025">
+        <div class="projects-grid">
 
-                <div class="year-title" data-aos="fade-up">
-                    <span>2025</span>
-                    <h3>Proyectos con Arduino realizados por 5to año</h3>
-                </div>
+            <button class="project-card" type="button"
+                data-description="Proyecto con Arduino desarrollado por estudiantes de 5to TIPP con juego de luces led RGB."
+                aria-label="Ver proyecto Arduino 1">
+                <img src="/assets/images/arduinox.webp"
+                    alt="Proyecto realizado con Arduino">
+                <span class="project-overlay">
+                    <span>Proyecto Arduino luces</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
-                <div class="projects-grid">
+            <button class="project-card" type="button"
+                data-description="Proyecto educativo realizado con Arduino, consiste en un piano con diferentes notas."
+                aria-label="Ver proyecto Arduino 2">
+                <img src="/assets/images/arduino2.webp"
+                    alt="Segundo proyecto realizado con Arduino">
+                <span class="project-overlay">
+                    <span>Proyecto Arduino piano</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduinox.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
-                        >
-                    </div>
+            <button class="project-card" type="button"
+                data-description="Proyecto realizado con Arduino, consiste en una mano robótica articulada."
+                aria-label="Ver proyecto Arduino 3">
+                <img src="/assets/images/arduino5.webp"
+                    alt="Tercer proyecto realizado con Arduino">
+                <span class="project-overlay">
+                    <span>Proyecto Arduino mano robótica</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino2.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
-                        >
-                    </div>
+            <button class="project-card" type="button"
+                data-description="Proyecto realizado por estudiantes de TIPP en 2024, utilizando Arduino como herramienta de aprendizaje y experimentación."
+                aria-label="Ver proyecto Arduino 4">
+                <img src="/assets/images/arduino-us.webp"
+                    alt="Proyecto con Arduino realizado en 2024">
+                <span class="project-overlay">
+                    <span>Proyecto con Arduino y pantalla led.</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino5.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
-                        >
-                    </div>
+            <button class="project-card" type="button"
+                data-description="Experiencia práctica de programación y electrónica desarrollada por estudiantes de TIPP en 2024."
+                aria-label="Ver proyecto Arduino 5">
+                <img src="/assets/images/arduino-us2.webp"
+                    alt="Segundo proyecto con Arduino realizado en 2024">
+                <span class="project-overlay">
+                    <span>Proyecto con Arduino</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino4.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2025"
-                        >
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- 2024 -->
-            <div class="year-section year-2024">
-
-                <div class="year-title" data-aos="fade-up">
-                    <span>2024</span>
-                    <h3>Proyectos con Arduino realizados por 5to año</h3>
-                </div>
-
-                <div class="projects-grid">
-
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino-us.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
-                        >
-                    </div>
-
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino-us2.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
-                        >
-                    </div>
-
-                    <div class="project-card" data-aos="fade-up">
-                        <img
-                            src="/assets/images/arduino-us3.webp"
-                            alt="Proyecto con Arduino realizado por estudiantes en 2024"
-                        >
-                    </div>
-
-                </div>
-
-            </div>
+            <button class="project-card" type="button"
+                data-description="Otro de los proyectos desarrollados en las prácticas de TIPP durante 2024, combinando conocimientos técnicos y trabajo creativo."
+                aria-label="Ver proyecto Arduino 6">
+                <img src="/assets/images/arduino-us3.webp"
+                    alt="Tercer proyecto con Arduino realizado en 2024">
+                <span class="project-overlay">
+                    <span>Proyecto con Arduino</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
 
         </div>
-
     </div>
 </section>
 
+<!-- VISOR AMPLIADO -->
+<div class="project-modal" id="projectModal"
+    role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+    aria-hidden="true">
+
+    <button class="modal-close" id="modalClose"
+        type="button" aria-label="Cerrar">×</button>
+
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+        <div class="modal-caption">
+            <h3 id="modalTitle">Proyecto de TIPP</h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <button class="modal-arrow modal-prev" id="modalPrev"
+        type="button" aria-label="Proyecto anterior">‹</button>
+
+    <button class="modal-arrow modal-next" id="modalNext"
+        type="button" aria-label="Proyecto siguiente">›</button>
+</div>
 
 <style>
-
-    .arduino-section{
+    .arduino-section {
         margin-top: 100px;
+        padding: 0 20px 80px;
         display: flex;
         justify-content: center;
     }
 
-
-    .max-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .title-container{
-        margin-bottom: 50px;
-    }
-
-
-    .years-container{
+    .arduino-section .max-content {
         width: 100%;
         max-width: 1200px;
-        margin-bottom: 30px;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        gap: 60px;
-        align-items: start;
-    }
-
-
-    .year-section{
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        width: 100%;
     }
 
-
-    .year-title{
+    .arduino-section .title-container {
         width: 100%;
-        text-align: center;
-
-        margin-bottom: 30px;
+        max-width: 850px;
+        margin: 20px 0;
+        padding: 20px 25px;
+        justify-content: center;
     }
 
-
-    .year-title span{
+    .arduino-section .title-container h2 {
         display: block;
-
-        font-family: 'BebasNeue', sans-serif;
-        font-size: 3.5rem;
-
-        color: var(--primary-color);
-
-        line-height: 1;
-        margin-bottom: 10px;
-    }
-
-
-    .year-title h3{
-        font-size: 1.35rem;
-        color: var(--secondary-color);
-
+        width: 100%;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        text-align: center;
         line-height: 1.3;
     }
 
+    .gallery-intro {
+        max-width: 750px;
+        margin: 0 0 40px;
+        color: var(--color-text);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        text-align: center;
+    }
 
-    .projects-grid{
+    .projects-grid {
         width: 100%;
-
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 20px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
     }
 
-
-    .project-card{
+    .project-card {
+        position: relative;
+        display: block;
         width: 100%;
-        aspect-ratio: 1 / 1;
-
+        aspect-ratio: 4 / 3;
+        padding: 0;
         overflow: hidden;
-
-        border-radius: 20px;
-
-        box-shadow:
-            0 8px 22px rgba(0, 0, 0, 0.20);
-
-        background: #fff;
-
-        transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
+        border: none;
+        border-radius: 18px;
+        background: #e8e8e8;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        text-align: left;
+        -webkit-tap-highlight-color: transparent;
     }
 
-
-    .project-card img{
+    .project-card img {
+        display: block;
         width: 100%;
         height: 100%;
-
-        display: block;
-
         object-fit: cover;
-
-        transition: transform 0.3s ease;
+        transition: transform 0.35s ease;
     }
 
-
-    .project-card:hover{
-        transform: translateY(-5px);
-
-        box-shadow:
-            0 14px 28px rgba(0, 0, 0, 0.28);
+    .project-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 7px;
+        padding: 20px;
+        color: #fff;
+        background: linear-gradient(
+            to top,
+            rgba(10, 15, 35, 0.88),
+            rgba(10, 15, 35, 0.0) 75%
+        );
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
     }
 
-
-    .project-card:hover img{
-        transform: scale(1.04);
+    .view-more {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #fff;
     }
 
-
-    /* El tercer proyecto de 2024 queda centrado */
-    .year-2024 .project-card:last-child{
-        grid-column: 1 / 3;
-        width: 50%;
-        justify-self: center;
+    .project-card:hover img,
+    .project-card:focus-visible img {
+        transform: scale(1.06);
     }
 
+    .project-card:focus-visible {
+        outline: 3px solid var(--fourth-color);
+        outline-offset: 4px;
+    }
 
-    @media screen and (max-width: 900px){
+    /* Visor ampliado */
+    .project-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 20000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 65px 25px 25px;
+        background: rgba(8, 12, 25, 0.94);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
 
-        .years-container{
-            grid-template-columns: 1fr;
+    .project-modal.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 
-            width: 90%;
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+        max-width: 1000px;
+        max-height: 100%;
+        overflow-y: auto;
+    }
 
-            gap: 70px;
+    .modal-content img {
+        display: block;
+        max-width: 100%;
+        max-height: 65vh;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-caption {
+        width: 100%;
+        max-width: 750px;
+        padding: 0 10px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .modal-caption h3 {
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .modal-caption p {
+        color: #eee;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .modal-close,
+    .modal-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.16);
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .modal-close:hover,
+    .modal-arrow:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .modal-close {
+        top: 18px;
+        right: 22px;
+        width: 46px;
+        height: 46px;
+        font-size: 2rem;
+    }
+
+    .modal-arrow {
+        top: 45%;
+        width: 46px;
+        height: 46px;
+        font-size: 2.5rem;
+    }
+
+    .modal-prev {
+        left: 18px;
+    }
+
+    .modal-next {
+        right: 18px;
+    }
+
+    @media (max-width: 900px) {
+        .projects-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
         }
 
+        .project-overlay {
+            padding: 14px;
+            font-size: 0.95rem;
+        }
 
-        .year-title h3{
+        .modal-prev {
+            left: 8px;
+        }
+
+        .modal-next {
+            right: 8px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .arduino-section {
+            margin-top: 55px;
+            padding: 0 14px 55px;
+        }
+
+        .arduino-section .title-container {
+            width: 100%;
+            padding: 18px 12px;
+            border-radius: 20px;
+        }
+
+        .gallery-intro {
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .projects-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .project-card {
+            aspect-ratio: 1 / 1;
+            border-radius: 13px;
+        }
+
+        .project-overlay {
+            padding: 10px;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+
+        .view-more {
+            font-size: 0.75rem;
+        }
+
+        .project-modal {
+            padding: 65px 15px 20px;
+        }
+
+        .modal-content img {
+            max-height: 52vh;
+        }
+
+        .modal-caption h3 {
             font-size: 1.3rem;
         }
 
+        .modal-caption p {
+            font-size: 0.92rem;
+        }
+
+        .modal-arrow {
+            top: auto;
+            bottom: 12px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .modal-prev {
+            left: calc(50% - 52px);
+        }
+
+        .modal-next {
+            right: calc(50% - 52px);
+        }
     }
 
-
-    @media screen and (max-width: 600px){
-
-        .projects-grid{
-            grid-template-columns: 1fr;
-
-            gap: 20px;
+    @media (prefers-reduced-motion: reduce) {
+        .project-card,
+        .project-card img,
+        .project-modal {
+            transition: none;
         }
-
-
-        .year-2024 .project-card:last-child{
-            grid-column: auto;
-
-            width: 100%;
-        }
-
-
-        .year-title span{
-            font-size: 3rem;
-        }
-
-
-        .year-title h3{
-            font-size: 1.2rem;
-        }
-
     }
-
 </style>
+
+<script>
+    const projectCards = Array.from(
+        document.querySelectorAll('.project-card')
+    );
+
+    const projectModal = document.getElementById('projectModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalClose = document.getElementById('modalClose');
+    const modalPrev = document.getElementById('modalPrev');
+    const modalNext = document.getElementById('modalNext');
+
+    let currentProject = 0;
+    let previousFocus = null;
+
+    function showProject(index) {
+        currentProject = (index + projectCards.length) % projectCards.length;
+
+        const card = projectCards[currentProject];
+        const image = card.querySelector('img');
+
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        modalTitle.textContent =
+            card.querySelector('.project-overlay > span').textContent;
+        modalDescription.textContent = card.dataset.description;
+
+        projectModal.classList.add('active');
+        projectModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function openProject(index) {
+        previousFocus = document.activeElement;
+        showProject(index);
+        document.body.style.overflow = 'hidden';
+        modalClose.focus();
+    }
+
+    function closeProject() {
+        projectModal.classList.remove('active');
+        projectModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+
+        if (previousFocus && typeof previousFocus.focus === 'function') {
+            previousFocus.focus();
+        }
+    }
+
+    projectCards.forEach((card, index) => {
+        card.addEventListener('click', () => openProject(index));
+    });
+
+    modalClose.addEventListener('click', closeProject);
+    modalPrev.addEventListener('click', () => showProject(currentProject - 1));
+    modalNext.addEventListener('click', () => showProject(currentProject + 1));
+
+    projectModal.addEventListener('click', (event) => {
+        if (event.target === projectModal) closeProject();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (!projectModal.classList.contains('active')) return;
+
+        if (event.key === 'Escape') closeProject();
+        if (event.key === 'ArrowRight') showProject(currentProject + 1);
+        if (event.key === 'ArrowLeft') showProject(currentProject - 1);
+    });
+</script>

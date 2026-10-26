@@ -1,0 +1,512 @@
+---
+---
+
+<section class="section teie-projects-section">
+    <div class="max-content">
+
+        <div class="title-container" data-aos="fade-up">
+            <h2>ALGUNOS PROYECTOS REALIZADOS POR TEIE</h2>
+        </div>
+
+        <p class="gallery-intro" data-aos="fade-up">
+            Conocé algunos de los proyectos realizados por nuestros
+            estudiantes de TEIE, donde los conocimientos técnicos,
+            la creatividad y el trabajo práctico se convierten en soluciones.
+            Tocá una imagen para descubrir más sobre cada proyecto.
+        </p>
+
+        <div class="projects-grid">
+
+            <!-- PROYECTO 1: reemplazá la imagen y la descripción -->
+            <button class="project-card" type="button"
+                data-description="Proyecto de carro para transportar sillas."
+                aria-label="Ver proyecto TEIE 1">
+
+                <img
+                    src="/assets/images/proyecto1.jpeg"
+                    alt="Proyecto realizado por estudiantes de TEIE"
+                >
+
+                <span class="project-overlay">
+                    <span>Proyecto carro para sillas</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
+
+            <!-- PROYECTO 2 -->
+            <button class="project-card" type="button"
+                data-description="Proyecto de carro para transportar sillas."
+                aria-label="Ver proyecto TEIE 2">
+
+                <img
+                    src="/assets/images/teie-proyecto2.jpeg"
+                    alt="Segundo proyecto realizado por estudiantes de TEIE"
+                >
+
+                <span class="project-overlay">
+                    <span>Proyecto carro para sillas</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
+
+            <!-- PROYECTO 3 -->
+            <button class="project-card" type="button"
+                data-description="Proyecto de renovación de bicicletas."
+                aria-label="Ver proyecto TEIE 3">
+
+                <img
+                    src="/assets/images/proyecto3.jpeg"
+                    alt="Tercer proyecto realizado por estudiantes de TEIE"
+                >
+
+                <span class="project-overlay">
+                    <span>Proyecto renovación de bicicletas</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
+
+            <button class="project-card" type="button"
+                data-description="Proyecto de construcción de bancos."
+                aria-label="Ver proyecto TEIE 3">
+
+                <img
+                    src="/assets/images/teie-proyecto4.jpeg"
+                    alt="Tercer proyecto realizado por estudiantes de TEIE"
+                >
+
+                <span class="project-overlay">
+                    <span>Proyecto construcción de bancos</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
+
+            <button class="project-card" type="button"
+                data-description="Proyecto de construcción de bancos."
+                aria-label="Ver proyecto TEIE 3">
+
+                <img
+                    src="/assets/images/teie-proyecto5.jpeg"
+                    alt="Tercer proyecto realizado por estudiantes de TEIE"
+                >
+
+                <span class="project-overlay">
+                    <span>Proyecto construcción bancos</span>
+                    <span class="view-more">Ver proyecto ↗</span>
+                </span>
+            </button>
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- VISOR AMPLIADO -->
+<div class="project-modal" id="teieProjectModal"
+    role="dialog" aria-modal="true"
+    aria-labelledby="teieModalTitle" aria-hidden="true">
+
+    <button class="modal-close" id="teieModalClose"
+        type="button" aria-label="Cerrar">×</button>
+
+    <div class="modal-content">
+        <img id="teieModalImage" src="" alt="">
+
+        <div class="modal-caption">
+            <h3 id="teieModalTitle">Proyecto de TEIE</h3>
+            <p id="teieModalDescription"></p>
+        </div>
+    </div>
+
+    <button class="modal-arrow modal-prev" id="teieModalPrev"
+        type="button" aria-label="Proyecto anterior">‹</button>
+
+    <button class="modal-arrow modal-next" id="teieModalNext"
+        type="button" aria-label="Proyecto siguiente">›</button>
+</div>
+
+<style>
+    .teie-projects-section {
+        margin-top: 100px;
+        padding: 0 20px 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .teie-projects-section .max-content {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teie-projects-section .title-container {
+        width: 100%;
+        max-width: 850px;
+        margin: 20px 0;
+        padding: 20px 25px;
+        justify-content: center;
+    }
+
+    .teie-projects-section .title-container h2 {
+        display: block;
+        width: 100%;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .teie-projects-section .gallery-intro {
+        max-width: 750px;
+        margin: 0 0 40px;
+        color: var(--color-text);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    .teie-projects-section .projects-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .teie-projects-section .project-card {
+        position: relative;
+        display: block;
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        padding: 0;
+        overflow: hidden;
+        border: none;
+        border-radius: 18px;
+        background: #e8e8e8;
+        box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        text-align: left;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .teie-projects-section .project-card img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.35s ease;
+    }
+
+    .teie-projects-section .project-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 7px;
+        padding: 20px;
+        color: #fff;
+        background: linear-gradient(
+            to top,
+            rgba(10, 15, 35, 0.88),
+            rgba(10, 15, 35, 0) 75%
+        );
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.05rem;
+        font-weight: 700;
+    }
+
+    .teie-projects-section .view-more {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .teie-projects-section .project-card:hover img,
+    .teie-projects-section .project-card:focus-visible img {
+        transform: scale(1.06);
+    }
+
+    .teie-projects-section .project-card:focus-visible {
+        outline: 3px solid var(--fourth-color);
+        outline-offset: 4px;
+    }
+
+    /* Visor ampliado */
+    .teie-projects-section ~ .project-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 20000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 65px 25px 25px;
+        background: rgba(8, 12, 25, 0.94);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+
+    .teie-projects-section ~ .project-modal.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+        max-width: 1000px;
+        max-height: 100%;
+        overflow-y: auto;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-content img {
+        display: block;
+        max-width: 100%;
+        max-height: 65vh;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .teie-projects-section ~ .project-modal .modal-caption {
+        width: 100%;
+        max-width: 750px;
+        padding: 0 10px 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-caption h3 {
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-caption p {
+        color: #eee;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-close,
+    .teie-projects-section ~ .project-modal .modal-arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.16);
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-close:hover,
+    .teie-projects-section ~ .project-modal .modal-arrow:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .teie-projects-section ~ .project-modal .modal-close {
+        top: 18px;
+        right: 22px;
+        width: 46px;
+        height: 46px;
+        font-size: 2rem;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-arrow {
+        top: 45%;
+        width: 46px;
+        height: 46px;
+        font-size: 2.5rem;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-prev {
+        left: 18px;
+    }
+
+    .teie-projects-section ~ .project-modal .modal-next {
+        right: 18px;
+    }
+
+    @media (max-width: 900px) {
+        .teie-projects-section .projects-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .teie-projects-section .project-overlay {
+            padding: 14px;
+            font-size: 0.95rem;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-prev {
+            left: 8px;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-next {
+            right: 8px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .teie-projects-section {
+            margin-top: 55px;
+            padding: 0 14px 55px;
+        }
+
+        .teie-projects-section .title-container {
+            width: 100%;
+            padding: 18px 12px;
+            border-radius: 20px;
+        }
+
+        .teie-projects-section .gallery-intro {
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .teie-projects-section .projects-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .teie-projects-section .project-card {
+            aspect-ratio: 1 / 1;
+            border-radius: 13px;
+        }
+
+        .teie-projects-section .project-overlay {
+            padding: 10px;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+
+        .teie-projects-section .view-more {
+            font-size: 0.75rem;
+        }
+
+        .teie-projects-section ~ .project-modal {
+            padding: 65px 15px 20px;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-content img {
+            max-height: 52vh;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-caption h3 {
+            font-size: 1.3rem;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-caption p {
+            font-size: 0.92rem;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-arrow {
+            top: auto;
+            bottom: 12px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .teie-projects-section ~ .project-modal .modal-prev {
+            left: calc(50% - 52px);
+        }
+
+        .teie-projects-section ~ .project-modal .modal-next {
+            right: calc(50% - 52px);
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .teie-projects-section .project-card,
+        .teie-projects-section .project-card img,
+        .teie-projects-section ~ .project-modal {
+            transition: none;
+        }
+    }
+</style>
+
+<script>
+    const teieProjectCards = Array.from(
+        document.querySelectorAll('.teie-projects-section .project-card')
+    );
+
+    const teieProjectModal = document.getElementById('teieProjectModal');
+    const teieModalImage = document.getElementById('teieModalImage');
+    const teieModalTitle = document.getElementById('teieModalTitle');
+    const teieModalDescription = document.getElementById('teieModalDescription');
+    const teieModalClose = document.getElementById('teieModalClose');
+    const teieModalPrev = document.getElementById('teieModalPrev');
+    const teieModalNext = document.getElementById('teieModalNext');
+
+    let teieCurrentProject = 0;
+    let teiePreviousFocus = null;
+
+    function showTeieProject(index) {
+        if (!teieProjectCards.length) return;
+
+        teieCurrentProject =
+            (index + teieProjectCards.length) % teieProjectCards.length;
+
+        const card = teieProjectCards[teieCurrentProject];
+        const image = card.querySelector('img');
+
+        teieModalImage.src = image.src;
+        teieModalImage.alt = image.alt;
+        teieModalTitle.textContent =
+            card.querySelector('.project-overlay > span').textContent;
+        teieModalDescription.textContent = card.dataset.description;
+
+        teieProjectModal.classList.add('active');
+        teieProjectModal.setAttribute('aria-hidden', 'false');
+    }
+
+    function openTeieProject(index) {
+        teiePreviousFocus = document.activeElement;
+        showTeieProject(index);
+        document.body.style.overflow = 'hidden';
+        teieModalClose.focus();
+    }
+
+    function closeTeieProject() {
+        teieProjectModal.classList.remove('active');
+        teieProjectModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+
+        if (teiePreviousFocus && typeof teiePreviousFocus.focus === 'function') {
+            teiePreviousFocus.focus();
+        }
+    }
+
+    teieProjectCards.forEach((card, index) => {
+        card.addEventListener('click', () => openTeieProject(index));
+    });
+
+    teieModalClose.addEventListener('click', closeTeieProject);
+    teieModalPrev.addEventListener('click', () =>
+        showTeieProject(teieCurrentProject - 1)
+    );
+    teieModalNext.addEventListener('click', () =>
+        showTeieProject(teieCurrentProject + 1)
+    );
+
+    teieProjectModal.addEventListener('click', (event) => {
+        if (event.target === teieProjectModal) closeTeieProject();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (!teieProjectModal.classList.contains('active')) return;
+
+        if (event.key === 'Escape') closeTeieProject();
+        if (event.key === 'ArrowRight') showTeieProject(teieCurrentProject + 1);
+        if (event.key === 'ArrowLeft') showTeieProject(teieCurrentProject - 1);
+    });
+</script>
